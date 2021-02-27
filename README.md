@@ -8,7 +8,7 @@ Camera & Lidar for 3D Object Tracking
 <img src="images/course_code_structure.png" width="779" height="414" />
 
 ## Project workflow
-These are the four major tasks: 
+These are the major tasks: 
 
 1. First, I developed a way to match 3D objects over time by using keypoint correspondences. 
 2. Second, I computed the TTC based on Lidar measurements. 

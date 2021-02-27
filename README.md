@@ -1,6 +1,6 @@
 # Sensor Fusion Program - 2nd Project 3D Object Tracking
 
-In the previous project 2D feature tracking we used keypoint detectors, descriptors, and implemented methods to match them between successive images. Also, you know how to detect objects in an image using the YOLO deep-learning framework. And finally, you know how to associate regions in a camera image with Lidar points in 3D space. 
+In the previous project, "2D feature tracking" we used keypoint detectors, descriptors, and implemented methods to match them between successive images. Also, you know how to detect objects in an image using the YOLO deep-learning framework. And finally, you know how to associate regions in a camera image with Lidar points in 3D space. 
 
 ## Project description
 Camera & Lidar for 3D Object Tracking

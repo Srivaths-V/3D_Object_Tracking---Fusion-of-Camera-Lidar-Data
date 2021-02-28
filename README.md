@@ -46,7 +46,7 @@ The detectors descriptor combos (FAST_BRIEF, FAST_ORB, ORB_BRIEF) are not recomm
 
 TOP VIEW OF LIDAR POINTS - THESE ARE THE POINTS DESCRIBING THE REAR OF THE PRECEDING VEHICLE 
 
-<img src="FP6_Graph.jpg" width = 700/>
+<img src="/Lidar 3D objects visualized/3D Objects_screenshot_1.png " width = 700/>
 
 
 

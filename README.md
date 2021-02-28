@@ -42,7 +42,7 @@ The combos AKAZE_BRIEF, AKAZE_BRISK, SIFT_BRISK, BRISK_BRIEF seems to give a rea
 
 The detectors descriptor combos (FAST_BRIEF, FAST_ORB, ORB_BRIEF) are not recommended because of certain unwanted/unreliable estimates because the based on the keypoints detected and described by these combo the median distance ratios will be nearly 1 thus giving “inf” value of TTC.
 
-* Camera & Lidar fusion *
+* Camera & Lidar fusion 
 
 TOP VIEW OF LIDAR POINTS - THESE ARE THE POINTS DESCRIBING THE REAR OF THE PRECEDING VEHICLE 
 
@@ -50,7 +50,7 @@ TOP VIEW OF LIDAR POINTS - THESE ARE THE POINTS DESCRIBING THE REAR OF THE PRECE
 
 VISUALIZING THE RESULT - 3D OBJECT Tracking
 
-<img src= "TTC_lidar & TTC_camera images/AKAZE_BRIEF/Final Results _ TTC_screenshot_13.png" />
+<img src= "result gif.gif" />
 
 
 

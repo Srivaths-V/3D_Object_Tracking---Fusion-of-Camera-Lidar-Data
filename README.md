@@ -46,8 +46,11 @@ The detectors descriptor combos (FAST_BRIEF, FAST_ORB, ORB_BRIEF) are not recomm
 
 TOP VIEW OF LIDAR POINTS - THESE ARE THE POINTS DESCRIBING THE REAR OF THE PRECEDING VEHICLE 
 
-<img src="/Lidar 3D objects visualized/3D Objects_screenshot_1.png " width = 700/>
+<img src="/Lidar 3D objects visualized/3D Objects_screenshot_1.png " width = 500/>
 
+VISUALIZING THE RESULT - 3D OBJECT Tracking
+
+<img src= "TTC_lidar & TTC_camera images/AKAZE_BRIEF/Final Results _ TTC_screenshot_13.png" />
 
 
 

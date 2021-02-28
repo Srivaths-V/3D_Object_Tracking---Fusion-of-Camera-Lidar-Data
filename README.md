@@ -36,13 +36,17 @@ This can be made better if we incorporate the acceleration/deceleration characte
 The computation of the TTC is based on the median distance ratio as explained in the lesson “Estimating TTC with a Camera”. 
 TTC = -dT/ (1-medDistRatio)
 
-<img src="FP6_Graph.jpg"/>
+<img src="FP6_Graph.jpg" width = 700/>
 
 The combos AKAZE_BRIEF, AKAZE_BRISK, SIFT_BRISK, BRISK_BRIEF seems to give a reasonable TTC_Camera_Estimate. However, even SIFT_BRISK has some unexpected large estimate : 44.42s at image frame 4 and similarly BRISK_BRIEF has a large valueof 63.34 s at image frame 6. Hence, AKAZE_BRIEF, AKAZE_BRISK are somewhat reliable and recommended among these combinations.
 
 The detectors descriptor combos (FAST_BRIEF, FAST_ORB, ORB_BRIEF) are not recommended because of certain unwanted/unreliable estimates because the based on the keypoints detected and described by these combo the median distance ratios will be nearly 1 thus giving “inf” value of TTC.
 
+* Camera & Lidar fusion *
 
+TOP VIEW OF LIDAR POINTS - THESE ARE THE POINTS DESCRIBING THE REAR OF THE PRECEDING VEHICLE 
+
+<img src="FP6_Graph.jpg" width = 700/>
 
 
 

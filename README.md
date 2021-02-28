@@ -19,6 +19,17 @@ These are the major tasks:
 8. And lastly, I conducted various tests with the framework. My goal is to identify the most suitable detector/descriptor combination for TTC estimation and also to search for problems that can lead to faulty measurements by the camera or Lidar sensor. 
 
 ## Project Results
+The time to collision(TTC) is calculated based on the constant velocity model. Therefore, it is calculate by the formula  TTC = (d1 * dT) / (d0 - d1), where d0 and d1 are the disances between the cars measured successively within the time interval dT.
+
+The data from the TTC estimate from the LIDAR seems not to be completely in tandem with the decreasing distance between the driven vehicle and the preceding vehicle (i.e. it not showing a completely decreasing TTC trend with respect to decreasing distance X min trend).
+
+<img src="FP5_GRAPH.jpg"/>
+
+We can also observe that, at image frames 5,6,7 the values seems to be plausible as the decreasing distance trend shows a considerable decreasing trend of the TTC estimate which is required for our case. However, in the 8th frame the TTC estimate is greater than the previous estimate though the distance is reduced. This is not a plausible situation. 
+
+This can be made better if we incorporate the acceleration/deceleration characteristics and thereby shifting towards the acceleration based TTC estimate instead of the constant velocity model, as in reality the vehicles in these situations rarely move with constant velocities.
+
+
 
 ## Dependencies for Running Locally
 * cmake >= 2.8

@@ -23,13 +23,27 @@ These are the major tasks:
 
 The time to collision(TTC) is calculated based on the constant velocity model. Therefore, it is calculate by the formula  TTC = (d1 * dT) / (d0 - d1), where d0 and d1 are the disances between the cars measured successively within the time interval dT.
 
-The data from the TTC estimate from the LIDAR seems not to be completely in tandem with the decreasing distance between the driven vehicle and the preceding vehicle (i.e. it not showing a completely decreasing TTC trend with respect to decreasing distance X min trend).
+The data from the TTC estimate from the LIDAR is completely decreasing with the decreasing distance between the driven vehicle and the preceding vehicle (i.e. it not showing a completely decreasing TTC trend with respect to decreasing distance X min trend).
 
 <img src="FP5_GRAPH.jpg"/>
 
 We can also observe that, at image frames 5,6,7 the values seems to be plausible as the decreasing distance trend shows a considerable decreasing trend of the TTC estimate which is required for our case. However, in the 8th frame the TTC estimate is greater than the previous estimate though the distance is reduced. This is not a plausible situation. 
 
 This can be made better if we incorporate the acceleration/deceleration characteristics and thereby shifting towards the acceleration based TTC estimate instead of the constant velocity model, as in reality the vehicles in these situations rarely move with constant velocities.
+
+*Camera based TTC*
+
+The computation of the TTC is based on the median distance ratio as explained in the lesson “Estimating TTC with a Camera”. 
+TTC = -dT/ (1-medDistRatio)
+
+<img src="FP6_Graph.jpg"/>
+
+The combos AKAZE_BRIEF, AKAZE_BRISK, SIFT_BRISK, BRISK_BRIEF seems to give a reasonable TTC_Camera_Estimate. However, even SIFT_BRISK has some unexpected large estimate : 44.42s at image frame 4 and similarly BRISK_BRIEF has a large valueof 63.34 s at image frame 6. Hence, AKAZE_BRIEF, AKAZE_BRISK are somewhat reliable and recommended among these combinations.
+
+The detectors descriptor combos (FAST_BRIEF, FAST_ORB, ORB_BRIEF) are not recommended because of certain unwanted/unreliable estimates because the based on the keypoints detected and described by these combo the median distance ratios will be nearly 1 thus giving “inf” value of TTC.
+
+
+
 
 
 

@@ -19,6 +19,7 @@ These are the major tasks:
 8. And lastly, I conducted various tests with the framework. My goal is to identify the most suitable detector/descriptor combination for TTC estimation and also to search for problems that can lead to faulty measurements by the camera or Lidar sensor. 
 
 ## Project Results
+*Lidar based TTC*
 The time to collision(TTC) is calculated based on the constant velocity model. Therefore, it is calculate by the formula  TTC = (d1 * dT) / (d0 - d1), where d0 and d1 are the disances between the cars measured successively within the time interval dT.
 
 The data from the TTC estimate from the LIDAR seems not to be completely in tandem with the decreasing distance between the driven vehicle and the preceding vehicle (i.e. it not showing a completely decreasing TTC trend with respect to decreasing distance X min trend).

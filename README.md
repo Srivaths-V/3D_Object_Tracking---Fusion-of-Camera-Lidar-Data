@@ -13,7 +13,7 @@ These are the major tasks:
 1. First, I developed a way to match 3D objects over time by using keypoint correspondences. 
 2. Second, I computed the TTC based on Lidar measurements. 
 3. Then combined point cloud data from Lidar, used computer vision, and deep learning to track the moving vehicle in front of the self-driving car and estimated the time to collision (TTC).
-4. Object (vehicle) detected using YOLO Neural network through bounding boxes.
+4. Object (preceding vehicle) detected using YOLO Neural network through bounding boxes.
 5. Object tracking through matching keypoints from 2D feature tracking and bounding boxes across image frames, simultaneously associating regions in images with Lidar points in 3D space.
 7. Then, I computed the TTC based on those matches. 
 8. And lastly, I conducted various tests with the framework. My goal is to identify the most suitable detector/descriptor combination for TTC estimation and also to search for problems that can lead to faulty measurements by the camera or Lidar sensor. 
